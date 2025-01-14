@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 export const Header = () => {
   return (
     <>
@@ -5,26 +6,23 @@ export const Header = () => {
         <nav className='flex justify-between items-center rounded-lg bg-slate-900 p-8 '>
           <h1 className='font-bold text-2xl'>Aboubakar Arisar</h1>
 
-          <ul className='flex space-x-8 text-decoration-none font-bold '>
+          <ul className='flex space-x-8 text-decoration-none font-bold'>
             <li>
-              <a
-                href='/'
+              <Link
+                to='/'
                 className='hover:underline duration-300 transition-transform'
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='/about'>About</a>
+              <Link to='/about'>About</Link>
             </li>
             <li>
-              <a href='/skills'>Skills</a>
+              <Link to='/projects'>Projects</Link>
             </li>
             <li>
-              <a href='/projects'>Projects</a>
-            </li>
-            <li>
-              <a href='/contact'>Contact</a>
+              <Link to='/contact'>Contact</Link>
             </li>
           </ul>
         </nav>

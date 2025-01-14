@@ -3,6 +3,7 @@ import type { MetaFunction } from "@remix-run/node";
 
 import { Header } from "~/components/Header";
 import { Hero } from "~/components/Hero";
+import { Footer } from "~/components/Footer";
 export const meta: MetaFunction = () => {
   return [
     { title: "Aboubakar Portfolio" },
@@ -20,8 +21,11 @@ export default function Index() {
             theme={{ button: { backgroundColor: "#0042DA" } }}
           />
         </div> */}
+
         <Header />
+
         <Hero />
+        <Footer />
       </div>
     </>
   );
