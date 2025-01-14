@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+// import Bubble from "@typebot.io/react";
+
 import { Header } from "~/components/Header";
 import { Hero } from "~/components/Hero";
 export const meta: MetaFunction = () => {
@@ -11,7 +13,13 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <>
-      <div>
+      <div className='w-full min-h-screen relative'>
+        {/* <div className='absolute bottom-2 right-2'>
+          <Bubble
+            typebot='customer-support-58fui86'
+            theme={{ button: { backgroundColor: "#0042DA" } }}
+          />
+        </div> */}
         <Header />
         <Hero />
       </div>
