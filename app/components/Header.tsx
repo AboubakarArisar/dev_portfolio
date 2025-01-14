@@ -3,7 +3,7 @@ export const Header = () => {
   return (
     <>
       <header className='w-full h-20  p-16'>
-        <nav className='flex justify-between items-center rounded-lg bg-slate-900 p-8 '>
+        <nav className='flex justify-between items-center rounded-lg bg-slate-800 p-8 '>
           <h1 className='font-bold text-2xl'>Aboubakar Arisar</h1>
 
           <ul className='flex space-x-8 text-decoration-none font-bold'>

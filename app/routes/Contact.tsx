@@ -9,7 +9,7 @@ export const loader = async () => {
 const Contact = () => {
   return (
     <>
-      <div className='w-full min-h-screen  flex flex-col'>
+      <div className='w-full min-h-screen  flex flex-col bg-gradient-to-r from-gray-950 via-indigo-950 to-slate-950'>
         <Header />
         <div className='w-full min-h-screen flex flex-col p-8 gap-8'>
           <div className='w-full flex justify-between items-center h-screen p-8'>
@@ -22,12 +22,71 @@ const Contact = () => {
               </h3>
             </div>
             <img
-              src='https://d3kqdc25i4tl0t.cloudfront.net/articles/content/542_221504_tech.hero.jpg'
+              src='https://wallpapers.com/images/hd/professional-web-developer-working-on-a-code-setup-j8ljvi05wloqs3ii.jpg'
               alt='contact image'
               className='w-[500px] h-[500px] object-cover rounded-lg'
             />
           </div>
-          <div>jfl;dkfj;sdjf</div>
+          <div className='w-full min-h-screen flex justify-center items-center'>
+            <div className='w-[94%] h-full bg-slate-800 rounded-lg p-[10%] flex flex-col  justify-center items-start gap-4'>
+              <h1 className=' font-bold text-6xl'>Hello! Let's talk</h1>
+              <h4>
+                Fill in the form to contact me or send an email to{" "}
+                <a
+                  className='underline text-blue-400'
+                  href='mailto:aboubakar.dev@gmail.com'
+                >
+                  aboubakar.dev@gmail.com
+                </a>
+              </h4>
+              <form action='' className='w-full'>
+                <div className='flex flex-col gap-4 w-full'>
+                  <div className='flex flex-col gap-2'>
+                    <label htmlFor='name' className='text-lg font-medium'>
+                      Name
+                    </label>
+                    <input
+                      type='text'
+                      id='name'
+                      name='name'
+                      className='p-4 outline-none bg-transparent border-b'
+                      required
+                    />
+                  </div>
+                  <div className='flex flex-col gap-2'>
+                    <label htmlFor='email' className='text-lg font-medium'>
+                      Email
+                    </label>
+                    <input
+                      type='email'
+                      id='email'
+                      name='email'
+                      className='p-4 outline-none bg-transparent border-b'
+                      required
+                    />
+                  </div>
+                  <div className='flex flex-col gap-2'>
+                    <label htmlFor='message' className='text-lg font-medium'>
+                      Message
+                    </label>
+                    <textarea
+                      id='message'
+                      name='message'
+                      className='p-4 outline-none bg-transparent border-b resize-none'
+                      rows={5}
+                      required
+                    />
+                  </div>
+                  <button
+                    type='submit'
+                    className='bg-black p-4 rounded-lg  w-1/4'
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
         <Footer />
       </div>
