@@ -1,11 +1,11 @@
 export const Hero = () => {
   return (
     <>
-      <div className='min-h-screen w-full p-8 flex-flex-col gap-8'>
+      <div className='min-h-screen w-full p-8 flex-flex-col gap-8 overflow-hidden'>
         <div className='w-full h-full flex justify-evenly items-center'>
           <div className='w-1/2 flex items-start justify-start flex-col gap-4 p-8 h-full'>
             <h1 className='font-bold text-3xl'>Hello I'm</h1>
-            <h1 className='font-bold text-6xl text-blue-400'>
+            <h1 className='font-bold text-3xl md:text-6xl text-blue-400'>
               Aboubakar Arisar
             </h1>
             <p>I am currently 3rd year BSCS student</p>
