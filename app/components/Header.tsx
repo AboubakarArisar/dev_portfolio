@@ -57,24 +57,18 @@ export const Header = () => {
         <nav className='flex justify-between items-center rounded-lg p-4 md:p-8 '>
           <h1 className='font-bold text-xl md:text-2xl'>Ab</h1>
 
-          <ul className='hidden md:flex space-x-8 text-decoration-none font-bold'>
-            <li>
-              <Link
-                to='/'
-                className='hover:underline duration-300 transition-transform'
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to='/about'>About</Link>
-            </li>
-            <li>
-              <Link to='/projects'>Projects</Link>
-            </li>
-            <li>
-              <Link to='/contact'>Contact</Link>
-            </li>
+          <ul className='hidden md:flex space-x-8 font-bold'>
+            {["Home", "About", "Projects", "Contact"].map((item, index) => (
+              <li key={index} className='relative group'>
+                <Link
+                  to={`/${item.toLowerCase()}`}
+                  className=' duration-300 transition-transform relative'
+                >
+                  {item}
+                  <span className='absolute bottom-[-5px] font-bold left-0 w-full h-[2px] bg-green-600 scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100'></span>
+                </Link>
+              </li>
+            ))}
           </ul>
 
           <div
