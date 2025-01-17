@@ -55,7 +55,12 @@ export const Header = () => {
         </div>
 
         <nav className='flex justify-between items-center rounded-lg p-4 md:p-8 '>
-          <h1 className='font-bold text-xl md:text-2xl'>Ab</h1>
+          <Link
+            to='/'
+            className='font-bold text-xl md:text-2xl select-none cursor-pointer'
+          >
+            Ab
+          </Link>
 
           <ul className='hidden md:flex space-x-8 font-bold'>
             {["Home", "About", "Projects", "Contact"].map((item, index) => (
