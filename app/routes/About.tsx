@@ -4,7 +4,7 @@ import { Footer } from "~/components/Footer";
 export const loader = async () => {
   return json({ ok: true });
 };
-const Projects = () => {
+const About = () => {
   return (
     <>
       <div className='flex flex-col items-center w-full h-screen bg-gradient-to-r from-gray-950 via-indigo-950 to-slate-950 text-white/80'> 
@@ -18,4 +18,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default About;

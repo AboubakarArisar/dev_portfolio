@@ -9,7 +9,7 @@ export const loader = async () => {
 const Contact = () => {
   return (
     <>
-      <div className='w-full min-h-screen  flex flex-col bg-gradient-to-r from-gray-950 via-indigo-950 to-slate-950'>
+      <div className='w-full min-h-screen  flex flex-col bg-gradient-to-r from-gray-950 via-indigo-950 to-slate-950 text-white/80'>
         <Header />
         <div className='w-full min-h-screen flex flex-col p-8 gap-8'>
           <div className='w-full flex justify-between items-center h-screen p-8'>
@@ -79,7 +79,7 @@ const Contact = () => {
                   </div>
                   <button
                     type='submit'
-                    className='bg-black p-4 rounded-lg  w-1/4'
+                    className='bg-black hover:bg-slate-700 duration-300 cursor-pointer p-4 rounded-lg  w-1/4'
                   >
                     Send Message
                   </button>

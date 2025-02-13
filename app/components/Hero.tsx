@@ -59,7 +59,7 @@ export const Hero = () => {
             </div>
           </div>
           <div className='w-1/2 flex items-start justify-end p-8 h-full'>
-            <div className='w-[70%] h-[70%] rounded-full border'>
+            <div className='w-[50%] h-[50%] rounded-full border'>
               <img
                 src='https://avatars.githubusercontent.com/u/116747262?v=4'
                 alt='my picture'
